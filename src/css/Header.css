@@ -1,0 +1,134 @@
+div.container-fluid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar{
+  background-color: var(--neutral);
+  color: var(--onNeutral);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 56px;
+  z-index: 100;
+  max-width: 1920px;
+}
+.nav-buttons ul{
+  display: none;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar img{
+  transition: 0.4s;
+  height: 20px;
+}
+.nav-logo{
+  transition: 0.4s;
+  height: 20px;
+}
+.nav-logo:hover{
+  opacity: 0.8;
+}
+.navbar svg{
+  font-size: 20px;
+}
+.navbar a{
+  text-decoration: none;
+  color: var(--onNeutral);
+  font-family: var(--sansFont);
+}
+
+.closeMenu{
+  display: none;
+}
+.openMenu{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+  color: var(--onNeutral);
+  background-color: #1D1B20;
+  padding: 8px 16px;
+  animation: slide 0.3s;
+  z-index: 100;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.openMenu a{
+  text-decoration: none;
+  color: var(--onNeutral);
+  font-size: var(--body_16);
+  
+  &:nth-child(1){
+    animation: slide 0.1s;
+  }
+  &:nth-child(2){
+    animation: slide 0.2s;
+  }
+  &:nth-child(3){
+    animation: slide 0.3s;
+  }
+  &:nth-child(4){
+    animation: slide 0.4s;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .openMenu{
+    display: none;
+  }
+  .navbar{
+    padding: 0;
+    padding-inline: 32px;
+    height: 56px;
+  }
+  .nav-buttons ul{
+    display: flex;
+    font-size: var(--body_16);
+  }
+  .navbar svg{
+    display: none;
+  }
+  .nav-buttons li:hover{
+    border-bottom: 0.15rem solid var(--onNeutral);
+    margin-bottom: -0.15rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbar{
+    padding-inline: 48px;
+  }
+
+}
+@media only screen and (min-width: 1440px) {
+  .navbar{
+    padding-inline: 64px;
+    height: 64px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .navbar{
+    padding-inline: 80px;
+    height: 72px;
+  }
+}
+
+
+

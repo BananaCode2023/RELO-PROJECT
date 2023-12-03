@@ -1,0 +1,106 @@
+.about-us{
+  max-width: 1920px;
+  margin-inline: auto;
+}
+.about-us .swiper-button-next::after, .about-us .swiper-button-prev::after{
+  color: var(--neutral) !important;
+}
+.about-us #about-page{
+  border-bottom: 0.15rem solid var(--onNeutral);
+  margin-bottom: -0.15rem;
+}
+article{
+  padding: 32px 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+article h1{
+  color: var(--neutral);
+  font-size: var(--head_32);
+  font-family: var(--headingFont);
+  font-weight: var(--extraBold);
+}
+article p{
+  margin-block: 16px;
+  color: var(--onNeutralContainer);
+  font-size: var(--body_14);
+  font-family: var(--sFont);
+  font-weight: var(--thin);
+}
+.about-gallery{
+  display: none;
+}
+.article2 h1,
+.article2 p{
+  color: var(--onNeutral);
+}
+.article2-background{
+  background-color: var(--neutral);
+}
+.aboutGalleryClass{
+  background-color: var(--neutral);
+}
+.article2 .swiper-button-next::after, 
+.article2 .swiper-button-prev::after{
+  color: var(--onNeutral) !important;
+}
+
+@media only screen and (min-width: 768px){
+  article{
+    text-align: left;
+    padding: 48px 16px;
+  }
+  .about-gallery{
+    padding-block: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 1024px;
+  }
+  .about-gallery img{
+    width: 100%;
+    max-width: 156px
+  }
+}
+@media only screen and (min-width: 769px){
+  .about-gallery img{
+    max-width: 180px
+  }
+  article{
+    padding-inline: 32px;
+    min-width: 769px;
+    max-width: 1024px;
+  }
+}
+@media only screen and (min-width: 1024px){
+  .about-gallery img{
+    max-width: 200px;
+  }
+  article{
+    padding-inline: 48px;
+    max-width: 1440px;
+    padding: 54px 16px;
+  }
+  article h1{
+    font-size: var(--head_45);
+  }
+  article p{
+    font-size: var(--body_16);
+    font-weight: var(--regular);
+  }
+  .about-gallery{
+    max-width: 1440px;
+  }
+}
+@media only screen and (min-width: 1440px){
+  .about-gallery img{
+    min-width: 240px;
+    max-width: 290px;
+  }
+  article{
+    padding-inline: 48px;
+  }
+}

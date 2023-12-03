@@ -1,0 +1,126 @@
+.gallerySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-swiperSlide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.gallery-swiperSlide2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.gallery-swiperSlide img {
+  display: block;
+  width: 60%;
+  padding-bottom: 32px;
+  max-width: 240px;
+}
+.gallery-swiperSlide2 img {
+  padding-top: 40px;
+  display: block;
+  width: 60%;
+  max-width: 240px;
+}
+.gallery-swiperSlide{
+  background-color: var(--neutral);
+}
+.gallery-swiperSlide2{
+  background-color: var(--onNeutral);
+}
+.gallery-swiperSlide p{
+  color: var(--onNeutral);
+  font-size: var(--body_18);
+  padding-bottom: 16px;
+  font-weight: var(--regular);
+}
+.gallery-swiperSlide2 p{
+  color: var(--onNeutral);
+  font-size: var(--body_18);
+  padding-bottom: 16px;
+  font-weight: var(--regular);
+}
+.gallery-swiperSlide a{
+  text-decoration: none;
+}
+.gallery-swiperSlide span{
+  color: var(--onNeutral);
+  font-size: var(--body_14);
+  font-family: var(--serifFont);
+  padding-bottom: 16px;
+  font-weight: var(--regular);
+}
+.gallery-swiperSlide2 span{
+  color: var(--onNeutral);
+  font-size: var(--body_14);
+  font-family: var(--serifFont);
+  padding-bottom: 16px;
+  font-weight: var(--regular);
+}
+.watch-gallery2-layout{
+  display: none;
+}
+#watch-gallery-heading{
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
+  .watch-gallery1-layout{
+    display: none;
+  }
+  .watch-gallery2-layout{
+    display: flex;
+    margin-inline: auto;
+    justify-content: center;
+  }
+  .gallery-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 32px;
+  }
+  .gallery-col img {
+    width: 55%;
+    cursor: pointer;
+  }
+  .gallery-col p{
+    margin-top: 16px;
+    color: var(--onNeutral);
+    font-family: var(--sansFont);
+    font-size: var(--body_18);
+    font-weight: var(--regular);
+  }
+  .gallery-col span{
+    color: var(--onNeutral);
+    font-size: var(--body_14);
+    font-family: var(--serifFont);
+    padding:8px 0 16px;
+    font-weight: var(--regular);
+  }
+  .gallery-col a{
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  #watch-gallery-heading{
+    display: block;
+    padding-block: 64px;
+  }
+  .gallery-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+}
+
+

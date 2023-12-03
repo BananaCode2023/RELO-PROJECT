@@ -1,0 +1,192 @@
+:root {
+  --headingFont: 'Rubik';
+  --sansFont: 'Lato';
+  --serifFont: 'PT Serif';
+
+  --thin: 300;
+  --regular: 400;
+  --bold: 700;
+  --extraBold: 800;
+
+  --neutral: #1D1B20;
+  --onNeutral: #FAFAFA;
+  --neutralContainer: #E0E0E0;
+  --onNeutralContainer: #424242;
+
+  --error: #B41313;
+  --success: #088323;
+
+  --black: #1D1B20;
+  --black75: rgba(29,27,32,0.75);
+  --black50: rgba(29,27,32,0.5);
+  --black25: rgba(29,27,32,0.25);
+  --black10: rgba(29,27,32,0.1);
+  --black05: rgba(29,27,32,0.05);
+
+  --disp_64: 64px;
+  --disp_45: 45px;
+  --disp_36: 36px;
+  --head_57: 57px;
+  --head_45: 45px;
+  --head_36: 36px;
+  --head_32: 32px;
+  --head_28: 28px;
+  --head_24: 24px;
+
+  --body_18: 18px;
+  --body_16: 16px;
+  --body_14: 14px;
+  --body_12: 12px;
+  --body_10: 10px;
+
+  --penumbra: 0 6px 20px rgba(0,0,0,0.09);
+}
+.features-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-hero{
+  width: 100%;
+  min-width: 320px;
+  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/waveBG.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  min-height: 256px;
+  max-height: 719px;
+  flex-direction: column;
+}
+.features-hero img{
+  width: 35%;
+  max-width: 206px;
+  padding-block: 35px;
+}
+.features-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 32px;
+}
+.features-col h1{
+  font-size: var(--body_18);
+  font-family: var(--serifFont);
+  font-weight: var(--bold);
+}
+.features-col small{
+  font-size: var(--body_14);
+  font-family: var(--sansFont);
+  font-weight: var(--thin);
+  margin-bottom: 8px;
+}
+.features-col a{
+  text-decoration: none;
+}
+
+.features{
+
+  .features-row{
+
+    /* Banner */
+    &:nth-child(2){
+      background-color: var(--neutral);
+      color: var(--onNeutral);
+      font-size: var(--body_16);
+      padding: 48px 16px;
+    }
+    &:nth-child(2) p{
+      font-family: var(--serifFont);
+      text-align: center;
+      max-width: 800px;
+    }
+
+    /* Gallery */
+    &:nth-child(3){
+      padding-block: 48px;
+      background-color: var(--onNeutral);
+    }
+    &:nth-child(3) h3{
+      font-size: var(--body_16);
+      font-weight: var(--bold);
+      font-family: var(--serifFont);
+      border-bottom: 1px solid var(--neutral);
+      width: 40px;
+      margin-bottom: 16px;
+    }
+    &:nth-child(3) table{
+      width: 100%;
+      min-width: 288px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &:nth-child(3) .table-row{
+      border-bottom: 1px solid var(--black10);
+      padding-bottom: 8px;
+    }
+    &:nth-child(3) th{
+      text-align: left;
+      width: 113px;
+      font-size: var(--body_12);
+    }
+    &:nth-child(3) td{
+      text-align: left;
+      width: 175px;
+      font-weight: var(--thin);
+      font-size: var(--body_12);
+    }
+  }
+}
+.case, .crown, .details, .other-details{
+  min-height: 499px;
+} 
+
+.features-gallery{
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.features-img{
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/ceramicBG.jpg);
+  background-size: cover;
+  width: 320px;
+  min-height: 256px;
+  align-items: center;
+}
+.features-img img{
+  height: 256px;
+}
+.specifications{
+  padding: 16px;
+}
+.crown h3{
+  width: 52px !important;
+}
+.crown img{
+  width: 100%;
+  height: 100%;
+}
+
+.details img{
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  min-height: 256px;
+}
+.details h3{
+  width: 56px !important;
+}
+
+.other-details h3{
+  width: 105px !important;
+}
+
+

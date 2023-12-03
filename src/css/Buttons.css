@@ -1,0 +1,63 @@
+.buttons button{
+  padding: 8px 24px;
+  border-radius: 22px;
+  font-size: var(--body_16);
+  font-family: var(--serifFont);
+  font-weight: var(--regular);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.buttons svg{
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.elevated-button1{
+  background-color: var(--neutral);
+  color: var(--onNeutral);
+  border: none;
+  transition: 0.4s;
+}
+
+.elevated-button2{
+  background-color: var(--onNeutral);
+  border: none;
+  transition: 0.4s;
+}
+
+.elevated-button1:hover, .elevated-button2:hover{
+  box-shadow: var(--penumbra);
+  background-color: var(--onNeutralContainer);
+  color: var(--neutralContainer);
+  opacity: 0.8;
+}
+
+.tonal-button{
+  background-color: var(--neutralContainer);
+  color: var(--onNeutralContainer);
+  border: none;
+}
+
+.outline-button1{
+  border: 2px solid var(--neutral);
+  background-color: transparent;
+  transition: 0.4s;
+}
+
+.outline-button2{
+  border: 2px solid var(--onNeutral);
+  background-color: transparent;
+  color: var(--onNeutral);
+  transition: 0.4s;
+}
+
+.outline-button1:hover{
+  background-color: var(--onNeutralContainer);
+  color: var(--onNeutral);
+  border: 2px solid var(--onNeutralContainer);
+}
+.outline-button2:hover{
+  background-color: var(--onNeutral);
+  color: var(--neutral);
+}

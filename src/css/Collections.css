@@ -1,0 +1,99 @@
+.collections #collections-page{
+  border-bottom: 0.15rem solid var(--onNeutral);
+  margin-bottom: -0.15rem;
+}
+.collections{
+  max-width: 1920px;
+  margin-inline: auto;
+}
+.collections-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--black25);
+  width: 80%;
+  margin-inline: auto;
+}
+.collections-banner h1{
+  color: var(--neutral);
+  font-size: var(--head_32);
+  font-family: var(--headingFont);
+  font-weight: var(--extraBold);
+}
+.collections-banner span{
+  color: var(--neutral);
+  font-size: var(--body_16);
+  font-family: var(--serifFont);
+  font-weight: var(--regular);
+}
+.collection{
+  padding: 32px 16px;
+  text-align: center;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:nth-child(1) .collection-img{
+    background-image: url(../assets/gallery1.jpg);
+    background-size: cover;
+  }
+  &:nth-child(2) .collection-img{
+    background-image: url(../assets/gallery2.jpg);
+    background-size: cover;
+  }
+}
+.collection .collection-img{
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  max-width: 380px;
+  min-height: 240px;
+  max-height: 300px;
+  margin-bottom: 16px;
+  background-position: center;
+}
+.collection h2{
+  color: var(--neutral);
+  font-size: var(--body_18);
+  font-family: var(--sansFont);
+  font-weight: var(--extraBold);
+}
+.collection p{
+  margin-block: 16px;
+  color: var(--onNeutralContainer);
+  font-size: var(--body_14);
+  font-family: var(--sFont);
+  font-weight: var(--thin);
+}
+.collection a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.collection-desc{
+  max-width: 480px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-inline: auto;
+}
+@media only screen and (min-width: 768px){
+  .collections-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+    max-width: 768px;
+    margin-inline: auto;
+  }
+  .collections-banner h1{
+    font-size: var(--head_45);
+  }
+}
