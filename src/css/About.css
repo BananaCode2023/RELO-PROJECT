@@ -67,7 +67,8 @@ article p{
 }
 @media only screen and (min-width: 769px){
   .about-gallery img{
-    max-width: 180px
+    width: 23%;
+    max-width: 260px;
   }
   article{
     padding-inline: 32px;
@@ -77,12 +78,12 @@ article p{
 }
 @media only screen and (min-width: 1024px){
   .about-gallery img{
-    max-width: 200px;
+    width: 23%;
   }
   article{
     padding-inline: 48px;
     max-width: 1440px;
-    padding: 54px 16px;
+    padding: 54px 48px;
   }
   article h1{
     font-size: var(--head_45);

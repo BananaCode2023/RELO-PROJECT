@@ -75,16 +75,30 @@
   border-radius: 4px 4px 0px 0px;
   margin-inline: auto;
   padding-left: 16px;
+  padding-top: 8px;
 }
 .input-row{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  margin-bottom: 16px;
   width: 100%;
+  position: relative;
+}
+.input-row label{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 12px;
+  color: var(--black75);
+}
+.input-row label.input-label{
+  top: 0;
+  left: 0;
+  font-size: 8px;
+  margin: 4px 0 0 8px;
 }
 .contact-us form textarea{
-  margin-top: 16px;
   width: 100%;
   min-width: 288px;
   border: none;
@@ -94,7 +108,7 @@
   height: 104px;
   border-radius: 4px 4px 0px 0px;
   padding-left: 16px;
-  padding-top: 8px;
+  padding-top: 18px;
   resize: none;
 }
 .contact-us form button{
@@ -129,6 +143,9 @@
 .contact-hero{
   display: none;
 }
+.inputs{
+  width: 100%;
+}
 
 @media only screen and (min-width: 560px){
   .input-row{
@@ -141,6 +158,11 @@
   }
   .contact-us form textarea{
     max-width: 577px;
+  }
+  .inputs{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
   }
 }
 

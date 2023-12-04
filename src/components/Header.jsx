@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import { Collapse, NavLink, Navbar, Nav, NavItem} from 'reactstrap'
+import { NavLink, Navbar } from 'reactstrap'
 import { MdDehaze, MdClose } from "react-icons/md";
 import '../css/Header.css'
 import logo from '../assets/RELO-whiteLogo 1.png'

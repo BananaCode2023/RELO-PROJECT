@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-import { EffectFade, Navigation } from 'swiper/modules';
 import '../css/WatchGallery.css'
-import Buttons from './Buttons';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 

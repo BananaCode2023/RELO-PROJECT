@@ -1,46 +1,3 @@
-:root {
-  --headingFont: 'Rubik';
-  --sansFont: 'Lato';
-  --serifFont: 'PT Serif';
-
-  --thin: 300;
-  --regular: 400;
-  --bold: 700;
-  --extraBold: 800;
-
-  --neutral: #1D1B20;
-  --onNeutral: #FAFAFA;
-  --neutralContainer: #E0E0E0;
-  --onNeutralContainer: #424242;
-
-  --error: #B41313;
-  --success: #088323;
-
-  --black: #1D1B20;
-  --black75: rgba(29,27,32,0.75);
-  --black50: rgba(29,27,32,0.5);
-  --black25: rgba(29,27,32,0.25);
-  --black10: rgba(29,27,32,0.1);
-  --black05: rgba(29,27,32,0.05);
-
-  --disp_64: 64px;
-  --disp_45: 45px;
-  --disp_36: 36px;
-  --head_57: 57px;
-  --head_45: 45px;
-  --head_36: 36px;
-  --head_32: 32px;
-  --head_28: 28px;
-  --head_24: 24px;
-
-  --body_18: 18px;
-  --body_16: 16px;
-  --body_14: 14px;
-  --body_12: 12px;
-  --body_10: 10px;
-
-  --penumbra: 0 6px 20px rgba(0,0,0,0.09);
-}
 .features-row{
   display: flex;
   flex-direction: column;
@@ -141,15 +98,13 @@
     }
   }
 }
-.case, .crown, .details, .other-details{
-  min-height: 499px;
-} 
+
 
 .features-gallery{
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .features-img{
@@ -189,4 +144,80 @@
   width: 105px !important;
 }
 
+@media only screen and (min-width: 768px){
+  .features{
+    .features-row{
+      &:nth-child(1){
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      &:nth-child(1) .features-col{
+        width: 60%;
+        max-width: 540px;
+      }
+      &:nth-child(1) img{
+        max-width: 290px;
+        padding-block: 6.7%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .features-col h1{
+    font-size: var(--head_24);
+  }
+  .features-col small{
+    font-size: var(--body_16);
+  }
+  .features{
+
+    .features-row{
+      &:nth-child(2) p{
+        font-family: var(--serifFont);
+        font-size: var(--body_18);
+      }
+    }
+  }
+
+  .features{
+
+    .features-row{
+  
+      /* Gallery */
+      &:nth-child(3){
+        padding-inline: 32px;
+      }
+      &:nth-child(3) h3{
+        font-size: var(--body_18);
+      }
+      &:nth-child(3) th{
+        text-align: left;
+        width: 113px;
+        font-size: var(--body_14);
+      }
+      &:nth-child(3) td{
+        text-align: left;
+        width: 175px;
+        font-weight: var(--thin);
+        font-size: var(--body_14);
+      }
+    }
+  }
+  .crown h3{
+    width: 57px !important;
+  }
+  .details h3{
+    width: 61px !important;
+  }
+  .other-details h3{
+    width: 116px !important;
+  }
+  .features-img{
+    width: 300px;
+  }
+  .specifications{
+    width: 300px;
+  }
+}
 

@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react'
-import gallery1 from '../assets/gallery1.jpg'
-import gallery2 from '../assets/gallery2.jpg'
-import gallery3 from '../assets/gallery3.jpg'
 import Buttons from './Buttons';
 import { Link } from 'react-router-dom';
 import AOS from 'aos'
@@ -26,7 +23,7 @@ function WatchGallery2({img1, img2, img3, handleHoverImg1, handleHoverImg2, hand
             />
             <p>"RE-LO" First Series</p>
             <span>Deep Black Amber</span>
-            <Link to='/first_series'>
+            <Link to='/first_series' target='_blank'>
             <Buttons
             buttonType='elevatedButton2'
             buttonText='FEATURES '
@@ -42,7 +39,7 @@ function WatchGallery2({img1, img2, img3, handleHoverImg1, handleHoverImg2, hand
             />
             <p>Diver's Philippine Deep</p>
             <span>Teal Diver</span>
-            <Link to='/features'>
+            <Link to='/philippine-diver' target='_blank'>
             <Buttons
             buttonType='elevatedButton2'
             buttonText='FEATURES '
@@ -57,7 +54,7 @@ function WatchGallery2({img1, img2, img3, handleHoverImg1, handleHoverImg2, hand
             />
             <p>Diver's Philippine Deep</p>
             <span>Black Diver</span>
-            <Link to='/features'>
+            <Link to='/philippine-diver' target='_blank'>
             <Buttons
             buttonType='elevatedButton2'
             buttonText='FEATURES '

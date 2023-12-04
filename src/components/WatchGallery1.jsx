@@ -32,7 +32,7 @@ function WatchGallery({img1,img2,img3}) {
           <img src={img1} alt="relo-first-series" data-aos='fade-up' />
           <p>"RE-LO" First Series</p>
           <span>Deep Black Amber</span>
-          <Link to='/first_series'>
+          <Link to='/first_series' target='_blank'>
             <Buttons
             buttonType='elevatedButton2'
             buttonText='FEATURES '
@@ -44,7 +44,7 @@ function WatchGallery({img1,img2,img3}) {
           <img src={img2} alt="relo-teal-diver"  data-aos='fade-up'/>
           <p>Diver's Philippine Deep</p>
           <span>Teal Diver</span>
-          <Link to='/features'>
+          <Link to='/teal-diver' target='_blank'>
             <Buttons
             buttonType='elevatedButton2'
             buttonText='FEATURES '
@@ -56,7 +56,7 @@ function WatchGallery({img1,img2,img3}) {
           <img src={img3} alt="relo-black-diver" data-aos='fade-up' />
           <p>Diver's Philippine Deep</p>
           <span>Black Diver</span>
-          <Link to='/features'>
+          <Link to='/black-diver' target='_blank'>
             <Buttons
             buttonType='elevatedButton2'
             buttonText='FEATURES '

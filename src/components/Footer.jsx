@@ -1,24 +1,13 @@
 import React, { useEffect } from 'react';
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../css/Footer.css'
 
 function Footer() {
 
-  function ScrollToTop() {
-    // const { pathname } = useLocation();
-
-    // useEffect(() => {
-    //   window.scrollTo(0, 0);
-    // }, [pathname]);
-
-    return null;
-  }
-
   return (
     <footer>
-      {/* <ScrollToTop /> */}
       <div className='footer-columns'>
 
       <div className='footer-column'>

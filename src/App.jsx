@@ -6,6 +6,7 @@ import Collections from './pages/Collections'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import FirstSeries from './pages/First_Series'
+import PhDiver from './pages/PhDiver'
 
 function ScrollToTop() {
   window.scrollTo(0, 0);
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/first_series" element={<FirstSeries />} />
+          <Route path="/philippine-diver" element={<PhDiver />} />
         </Routes>
       </Router>
     </>

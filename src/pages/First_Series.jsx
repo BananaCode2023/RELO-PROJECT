@@ -11,28 +11,29 @@ import img1 from '../assets/leather3.png'
 import img2 from '../assets/leather5.png'
 import img3 from '../assets/crown.png'
 import img4 from '../assets/leather6.png'
+import img5 from '../assets/movement.png'
 
 function FirstSeries() {
 
   useEffect(() => {
-    AOS.init({duration: 2000})
+    AOS.init({duration: 1500})
   },[])
 
   return (
-    <>
+    <div className='features-page'>
       <Header/>
       <div className='features'>
 
         <div className='features-row'>
 
           <div className='features-hero'>
-              <img src={img1} alt="relo-leather" />
+              <img src={img1} alt="relo-leather" data-aos='zoom-in'/>
           </div>
 
           <div className='features-col'>
-              <h1>RE-LO FIRST SERIES</h1>
-              <small>Contact Us for Reservation</small>
-              <Link to='/contact-us'>
+              <h1 data-aos='fade-right'>RE-LO FIRST SERIES</h1>
+              <small data-aos='fade-right'>Contact Us for Reservation</small>
+              <Link to='/contact-us' data-aos='fade-right'>
               <Buttons
               buttonType='elevatedButton1'
               buttonText='CONTACT US'
@@ -51,7 +52,7 @@ function FirstSeries() {
         <div className='features-row'>
           <div className='features-gallery'>
             {/* CASE SPECIFICATION */}
-            <div className='case'>
+            <div className='case' data-aos='fade-down'>
 
               <div className='features-img'>
                 <img src={img2} alt="" />
@@ -91,7 +92,7 @@ function FirstSeries() {
             </div>
 
             {/* CROWN SPECIFICATION */}
-            <div className='crown'>
+            <div className='crown' data-aos='fade-down'>
               <div className='features-img'>
                 <img src={img3} alt="" />
               </div>
@@ -112,7 +113,7 @@ function FirstSeries() {
             </div>
 
             {/* DETAILS SPECIFICATION */}
-            <div className='details'>
+            <div className='details' data-aos='fade-down'>
               <div className='features-img'>
                 <img src={img4} alt="" />
               </div>
@@ -146,9 +147,9 @@ function FirstSeries() {
             </div>
 
             {/* OTHER DETAILS SPECIFICATION */}
-            <div className='other-details'>
+            <div className='other-details' data-aos='fade-down'>
               <div className='features-img'>
-                <img src={img2} alt="" />
+                <img src={img5} alt="" />
               </div>
 
               <div className='specifications'>
@@ -184,7 +185,7 @@ function FirstSeries() {
 
       <ScrollToTop/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

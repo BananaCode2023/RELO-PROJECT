@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../components/Header'
 import '../css/Collections.css'
 import Footer from '../components/Footer'
 import Buttons from '../components/Buttons'
 import { MdOutlineWatch } from "react-icons/md";
 import { Link } from 'react-router-dom'
-import collection1 from '../assets/gallery1.jpg'
-import collection2 from '../assets/gallery2.jpg'
 import ScrollToTop from '../components/ScrollToTop'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 function Collections() {
+
+  useEffect(() => {
+    AOS.init({duration: 1500})
+  },[])
+
   return (
     <div className='collections'>
       <Header/>
@@ -20,14 +25,14 @@ function Collections() {
       </div>
   
       <div className='collections-container'>
-        <div className='collection'>
+        <div className='collection' data-aos='fade-right'>
           <div className='collection-img'></div>
           <div className='collection-desc'>
             <h2>RE-LO FIRST SERIES</h2>
             <p>
             We now launch our very own 1st Microbrand series. The "RE-LO" series! Limited to 100pcs! Numbered 100/100 pcs! For Number reservation just DM or Contact us to check availability!
             </p>
-            <Link to='/features'>
+            <Link to='/first_series' target='_blank'>
               <Buttons
               buttonType='outlineButton1'
               buttonText='FEATURES'
@@ -37,14 +42,14 @@ function Collections() {
           </div>
         </div>
 
-        <div className='collection'>
+        <div className='collection' data-aos='fade-left'>
           <div className='collection-img'></div>
           <div className='collection-desc'>
             <h2>Diver's Philippine Deep</h2>
             <p>
-            We now launch our very own 1st Microbrand series. The "RE-LO" series! Limited to 100pcs! Numbered 100/100 pcs! For Number reservation just DM or Contact us to check availability!
+            RE-LO's First edition Philippine Deep Diver's Watch, the latest watch available at RE-LO watch co. Available in Teal and Black edition. 
             </p>
-            <Link to='/features'>
+            <Link to='/philippine-diver' target='_blank'>
               <Buttons
               buttonType='outlineButton1'
               buttonText='FEATURES'
